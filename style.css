@@ -1,5 +1,6 @@
 @layer reset, base, goffik;
 
+/* Reset {{{ */
 @layer reset {
   /* Box sizing rules */
   *,
@@ -75,7 +76,9 @@
     scroll-margin-block: 5ex;
   }
 }
+/* }}} */
 
+/* Base {{{ */
 @layer base {
   * + * {
     margin-block-start: 1.5em;
@@ -85,10 +88,11 @@
     max-inline-size: 65ch;
     margin-inline: auto;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 1.2em;
+    font-size: clamp(1.125em, 0.9946rem + 0.6522vw, 1.5em);;
     color: whitesmoke;
     background-color: #111111;
     padding-block-end: 5em;
+    padding-inline: 1em;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -142,7 +146,9 @@
     color: slategray;
   }
 }
+/* }}} */
 
+/* Goffik {{{ */
 @layer goffik {
   #chapter-1 hr:first-of-type::after {
     content: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
@@ -216,4 +222,13 @@
   #chapter-17 hr::after {
     content: 'XXXXXXXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXX';
   }
+
+  #chapter-18 hr::after {
+    content: 'XXXXXXXXXXXX666XXXXXXXXXXXXXXXXX';
+  }
 }
+/* }}} */
+
+/*
+vim: fdm=marker
+*/
