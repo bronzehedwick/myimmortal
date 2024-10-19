@@ -88,6 +88,7 @@
     font-size: 1.2em;
     color: whitesmoke;
     background-color: #111111;
+    padding-block-end: 5em;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -197,5 +198,22 @@
 
   #chapter-12 hr:last-of-type::after {
     content: 'XXXXXXXXXXXXXXXXXX666XXXXXXXXXXX';
+  }
+
+  #chapter-13 hr::after {
+    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+  }
+
+  #chapter-14 hr::after {
+    content: 'XXXXXXXXXXXXXXXXXXX666XXXXXXXXXX';
+  }
+
+  #chapter-15 hr::after,
+  #chapter-16 hr::after {
+    content: 'XXXXXXXXXXXXX666XXXXXXXXXXXXXXX';
+  }
+
+  #chapter-17 hr::after {
+    content: 'XXXXXXXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXX';
   }
 }
