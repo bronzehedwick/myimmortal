@@ -236,12 +236,9 @@
     content: 'XXXXXXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXX';
   }
 
-  #chapter-22 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXXXXXXXXX';
-  }
-
+  #chapter-22 hr::after,
   #chapter-23 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXXXXXXXXX';
   }
 
   #chapter-24 hr::after {
