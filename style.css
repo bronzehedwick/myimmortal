@@ -128,6 +128,7 @@
   [role='note'] {
     font-size: 0.9em;
     font-style: italic;
+    color: lightgray;
   }
 
   aside {
@@ -250,7 +251,7 @@
   }
 
   #chapter-26 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: 'XXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXX';
   }
 
   #chapter-27 hr::after {
