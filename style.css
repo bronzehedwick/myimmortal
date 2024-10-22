@@ -31,7 +31,7 @@
   /* Set core body defaults */
   body {
     min-height: 100vh;
-    line-height: 1.6;
+    line-height: 1.8;
   }
 
   /* Set shorter line heights on headings and interactive elements */
@@ -114,8 +114,16 @@
     font-size: 2em;
   }
 
-  p:first-child {
-    margin-block-start: 0;
+  /*p:first-child {*/
+  /*  margin-block-start: 0;*/
+  /*}*/
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    text-indent: 4ch;
   }
 
   abbr {
@@ -132,12 +140,12 @@
   }
 
   aside {
-    margin-block-start: 2em;
+    margin-block-start: 2.2em;
   }
 
   hr {
     border: none;
-    margin-block-start: 2em;
+    margin-block: 2em;
   }
 
   hr::after {
@@ -283,47 +291,47 @@
   }
 
   #chapter-34 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: 'XXXXXXXXXXXXXXXXXX666XXXXXXXXXXX';
   }
 
   #chapter-35 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-36 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-37 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-38 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-39 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-40 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-41 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-42 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-43 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 
   #chapter-44 hr::after {
-    content: 'XXXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXX';
+    content: '';
   }
 }
 /* }}} */
