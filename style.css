@@ -114,16 +114,14 @@
     font-size: 2em;
   }
 
-  /*p:first-child {*/
-  /*  margin-block-start: 0;*/
-  /*}*/
-
-  p {
+  p + p {
     margin: 0;
+    text-indent: 4ch;
   }
 
-  p + p {
-    text-indent: 4ch;
+  aside p + p {
+    margin-block-start: 1em;
+    text-indent: 0;
   }
 
   abbr {
@@ -153,6 +151,10 @@
     font-weight: 600;
     text-align: center;
     color: slategray;
+  }
+
+  #troll hr {
+    border: 1px solid;
   }
 }
 /* }}} */
