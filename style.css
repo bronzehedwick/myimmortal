@@ -127,6 +127,7 @@
   abbr {
     text-decoration-line: underline;
     text-decoration-style: dotted;
+    text-decoration-color: darkslategray;
   }
 
 
@@ -333,7 +334,7 @@
   }
 
   #chapter-42 hr::after {
-    content: '';
+    content: 'XXXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXXXXXXX';
   }
 
   #chapter-43 hr::after {
