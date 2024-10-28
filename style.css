@@ -114,6 +114,10 @@
     font-size: 2em;
   }
 
+  li + li {
+    margin-block-start: 0;
+  }
+
   p + p {
     margin: 0;
     text-indent: 4ch;
@@ -343,6 +347,39 @@
 
   #chapter-44 hr::after {
     content: 'XXXXXXXXXXXXXXX666XXXXXXXXXXXXXXXXXXXXXX';
+  }
+}
+/* }}} */
+
+/* Homepage {{{ */
+@layer goffik.home {
+  .home {
+    max-inline-size: none;
+  }
+
+  .home main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+  }
+
+  .home-image,
+  .home-toc {
+    flex: 1 1 33%;
+  }
+
+  .home-image {
+    margin-block-start: 1.5em;
+    flex-grow: 0;
+    max-inline-size: 50rem;
+  }
+
+  .home-toc ul {
+    columns: 2;
+  }
+
+  #table-of-contents {
+    margin-block-start: 0;
   }
 }
 /* }}} */
