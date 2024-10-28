@@ -1,4 +1,4 @@
-@layer reset, base, goffik;
+@layer reset, base, component, goffik;
 
 /* Reset {{{ */
 @layer reset {
@@ -156,6 +156,12 @@
     font-weight: 600;
     text-align: center;
     color: slategray;
+  }
+
+  footer {
+    margin-block-start: 8em;
+    font-size: 0.7em;
+    text-align: center;
   }
 
   #troll hr {
@@ -380,6 +386,18 @@
 
   #table-of-contents {
     margin-block-start: 0;
+  }
+}
+/* }}} */
+
+/* Chapter navigation {{{ */
+@layer component.chapter-nav {
+  #chapter-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-block-start: 4em;
+    border-block-start: 3px solid darkgray;
   }
 }
 /* }}} */
