@@ -377,7 +377,6 @@
   .home-image {
     margin-block-start: 1.5em;
     flex-grow: 0;
-    max-inline-size: 50rem;
   }
 
   .home-toc ul {
