@@ -158,6 +158,11 @@
     color: slategray;
   }
 
+  figcaption {
+    margin-block-start: 0;
+    font-size: 0.8em;
+  }
+
   footer {
     margin-block-start: 8em;
     font-size: 0.7em;
@@ -371,16 +376,17 @@
 
   .home-image,
   .home-toc {
-    flex: 1 1 33%;
+    flex: 1 1 50%;
   }
 
   .home-image {
-    margin-block-start: 1.5em;
-    flex-grow: 0;
+    margin-block: 1.5em 0;
+    margin-inline: 0;
   }
 
   .home-toc ul {
     columns: 2;
+    gap: 4ch;
   }
 
   #table-of-contents {
