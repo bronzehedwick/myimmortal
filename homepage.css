@@ -1,0 +1,36 @@
+/* Homepage {{{ */
+@layer goffik.home {
+  .home {
+    max-inline-size: none;
+  }
+
+  .home main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+  }
+
+  .home-image,
+  .home-toc {
+    flex: 1 1 50%;
+  }
+
+  .home-image {
+    margin-block: 1.5em 0;
+    margin-inline: 0;
+  }
+
+  .home-toc ul {
+    columns: 2;
+    gap: 4ch;
+  }
+
+  #table-of-contents {
+    margin-block-start: 0;
+  }
+}
+/* }}} */
+
+/*
+vim: fdm=marker
+*/
