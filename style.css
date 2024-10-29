@@ -396,8 +396,13 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    gap: 1ch;
     margin-block-start: 4em;
     border-block-start: 3px solid darkgray;
+  }
+
+  #chapter-nav a {
+    margin-block-start: 1.5em;
   }
 }
 /* }}} */
