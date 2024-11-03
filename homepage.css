@@ -1,41 +1,42 @@
-/* Homepage {{{ */
 @layer goffik.home {
-  h1 {
-    text-align: center;
-    font-size: 5em;
-  }
-
   .home {
     max-inline-size: none;
+    overflow-x: hidden;
   }
 
-  .home main {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: start;
+  header {
+    text-align: center;
   }
 
-  .home-image,
-  .home-toc {
-    flex: 1 1 50%;
+  h1 {
+    position: relative;
+    font-size: 5em;
+    margin-block-start: 0.25em;
+    text-shadow: 2px 2px white, -2px -2px black;
   }
 
-  .home-image {
-    margin-block: 1.5em 0;
-    margin-inline: 0;
+  #goth-drip {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
   }
 
-  .home-toc ul {
-    columns: 2;
-    gap: 4ch;
+  @media screen and (orientation: portrait) {
+    #goth-drip {
+      inline-size: 145%;
+    }
   }
 
-  #table-of-contents {
-    margin-block-start: 0;
+  .begin {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-block-start: 35vh;
+    text-decoration-line: none;
+    font-size: 2em;
+    font-variant-caps: small-caps;
+    font-family: cursive;
+    font-weight: 600;
   }
 }
-/* }}} */
-
-/*
-vim: fdm=marker
-*/
