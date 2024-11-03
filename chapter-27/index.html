@@ -6,16 +6,21 @@
     <title>My Immortal: Re-host</title>
     <meta name="color-scheme" content="dark">
     <link rel="stylesheet" href="/main.css">
+    <script defer src="/main.js"></script>
   </head>
   <body>
-    <header>
-      <h1>My Immortal</h1>
+    <header class="masthead">
+      <h1><a href="/">My Immortal</a></h1>
+      <button id="open-button" class="toc-button no-chrome-button" aria-expanded="false" aria-label="Table of Contents" type="button">
+        <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.09 400" width="40"><path d="M12.374 1006c150.75-13.875 302.39-14.408 455.02 0-3.444-95.638-10.307-189.32-7.778-288.37-93.751 3.259-147.24-75.783-227.58-13.081-90.906-64.653-90.903 18.62-222.62 18.385 6.286 95.682 3.846 189.18 2.952 283.07z" stroke-linejoin="round" stroke="#111" stroke-linecap="round" stroke-width="4" fill="#111" transform="translate(0 -652.36)"/><path d="M243.95 952.31c56.969-41.116 133.46 25.072 199.4 28.638l-.35-247.85c-104.27-6.8-141.23-84.275-200.82-14.496zM222.74 955.14c-56.97-41.12-133.46 25.07-199.4 28.63l.348-247.84c104.27-6.8 141.22-84.27 200.82-14.49z" fill="#fff" transform="translate(0 -652.36)"/></svg>
+        <span>Contents</span>
+      </button>
     </header>
 
     <main id="content">
       <article id="chapter-27">
         <header>
-          <h2>Chapter 27, vampirz wil never hurt u</h2>
+          <h2>Chapter 27, <span class="subline">vampirz wil never hurt u</span></h2>
         </header>
         <aside>
           <p><abbr title="Author's note">AN</abbr>: u no wut!111 I dnot giv a fok wut u prepz fink abot me!1111 so stup flaming da foking story bichez!1111 fangz 2 raven 4 ur luv n sport n help i luv u gurl soz i kodnt update lol I wuz rly deprezzd n I silt muh rists I had 2 go 2 da hospital rraven u rok gurl!11111111111111111111</p>
@@ -40,6 +45,60 @@
     <footer>
       <address>Website maintained with 🖤 by <a href="https://www.chrisdeluca.me">Chris DeLuca</a>.</address>
     </footer>
+
+    <dialog id="dialog" class="toc-modal" aria-hidden="true">
+      <button id="close-button" class="close-button no-chrome-button" aria-label="Close Table of Contents" type="button">ⓧ</button>
+      <nav class="toc" aria-label="Table of Contents">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/intro">Introduction</a></li>
+          <li><a href="/chapter-1">Chapter 1</a></li>
+          <li><a href="/chapter-2">Chapter 2</a></li>
+          <li><a href="/chapter-3">Chapter 3</a></li>
+          <li><a href="/chapter-4">Chapter 4</a></li>
+          <li><a href="/chapter-5">Chapter 5</a></li>
+          <li><a href="/chapter-6">Chapter 6</a></li>
+          <li><a href="/chapter-7">Chapter 7, <span class="subline">Bring me 2 life</span></a></li>
+          <li><a href="/chapter-8">Chapter 8</a></li>
+          <li><a href="/chapter-9">Chapter 9</a></li>
+          <li><a href="/chapter-10">Chapter 10</a></li>
+          <li><a href="/chapter-11">Chapter 11</a></li>
+          <li><a href="/chapter-12">Chapter 12</a></li>
+          <li><a href="/chapter-13">Chapter 13</a></li>
+          <li><a href="/chapter-14">Chapter 14</a></li>
+          <li><a href="/chapter-15">Chapter 15</a></li>
+          <li><a href="/chapter-16">Chapter 16</a></li>
+          <li><a href="/chapter-17">Chapter 17</a></li>
+          <li><a href="/chapter-18">Chapter 18</a></li>
+          <li><a href="/chapter-19">Chapter 19, <span class="subline">im nut ok i promise</span></a></li>
+          <li><a href="/chapter-20">Chapter 20</a></li>
+          <li><a href="/chapter-21">Chapter 21</a></li>
+          <li><a href="/chapter-22">Chapter 22</a></li>
+          <li><a href="/chapter-23">Chapter 23</a></li>
+          <li><a href="/chapter-24">Chapter 24</a></li>
+          <li><a href="/chapter-25">Chapter 25</a></li>
+          <li><a href="/chapter-26">Chapter 26</a></li>
+          <li><a href="/chapter-27">Chapter 27, <span class="subline">vampirz wil never hurt u</span></a></li>
+          <li><a href="/chapter-28">Chapter 28</a></li>
+          <li><a href="/chapter-29">Chapter 29</a></li>
+          <li><a href="/chapter-30">Chapter 30</a></li>
+          <li><a href="/chapter-31">Chapter 31</a></li>
+          <li><a href="/chapter-32">Chapter 32</a></li>
+          <li><a href="/chapter-33">Chapter 33</a></li>
+          <li><a href="/chapter-34">Chapter 34</a></li>
+          <li><a href="/chapter-35">Chapter 35</a></li>
+          <li><a href="/chapter-36">Chapter 36</a></li>
+          <li><a href="/chapter-37">Chapter 37</a></li>
+          <li><a href="/chapter-38">Chapter 38</a></li>
+          <li><a href="/chapter-39">Chapter 39, <span class="subline">I Am A Trolling Genious, lolz</span></a></li>
+          <li><a href="/chapter-40">Chapter 40, <span class="subline">LOL! Someone has taken my account over!</span></a></li>
+          <li><a href="/chapter-41">Chapter 41</a></li>
+          <li><a href="/chapter-42">Chapter 42, <span class="subline">da blak parade</span></a></li>
+          <li><a href="/chapter-43">Chapter 43</a></li>
+          <li><a href="/chapter-44">Chapter 44</a></li>
+        </ul>
+      </nav>
+    </dialog>
 
   </body>
 </html>
