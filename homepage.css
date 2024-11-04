@@ -1,16 +1,26 @@
 @layer goffik.home {
-  .home {
+  html {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body {
     max-inline-size: none;
     overflow-x: hidden;
+    position: relative;
   }
 
   header {
     text-align: center;
   }
 
-  h1 {
+  hgroup {
+    margin-inline: 0.25ch;
     position: relative;
-    font-size: 5em;
+  }
+
+  h1 {
+    font-size: 4.5em;
     margin-block-start: 0.25em;
     text-shadow: 2px 2px white, -2px -2px black;
   }
