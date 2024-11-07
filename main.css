@@ -78,16 +78,12 @@
 }
 /* }}} */
 
-/* Root custom properties {{{ */
+/* Base {{{ */
 @layer base {
   :root {
     --accent-color: mediumvioletred;
   }
-}
-/* }}} */
 
-/* Base {{{ */
-@layer base {
   body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', serif;
@@ -153,6 +149,16 @@
     font-weight: 600;
     text-align: center;
     color: slategray;
+  }
+
+  @supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+    aside + p:first-letter,
+    hr + p:first-letter {
+      -webkit-initial-letter: 2;
+      initial-letter: 2;
+      color: var(--accent-color);
+      padding-inline-end: 0.25ch;
+    }
   }
 
   figcaption {
