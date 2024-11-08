@@ -185,6 +185,10 @@
   :root :has(dialog[open]) #content {
     filter: blur(4px);
   }
+
+  .hidden {
+    display: none;
+  }
 }
 /* }}} */
 

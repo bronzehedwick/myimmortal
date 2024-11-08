@@ -47,15 +47,45 @@
     transform: translateY(0);
   }
 
+  #content {
+    display: grid;
+    padding-inline: 0;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
   .begin {
+    grid-column: 2;
     display: block;
     text-align: center;
     position: relative;
-    margin-block-start: 35vh;
+    margin-block-start: 2em;
     text-decoration-line: none;
     font-size: 2em;
     font-variant-caps: small-caps;
     font-family: cursive;
     font-weight: 600;
+
+    &::before {
+      content: '☠ ';
+    }
+
+    &::after {
+      content: ' ☠';
+    }
+  }
+
+  .hand {
+    grid-row: 2;
+    inline-size: 24vw;
+  }
+
+  #right-hand {
+    grid-column: 3;
+    transform: scaleX(-1);
+    justify-self: end;
+  }
+
+  footer {
+    margin-block-start: 4em;
   }
 }
