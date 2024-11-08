@@ -55,7 +55,8 @@
 
   .begin {
     grid-column: 2;
-    display: block;
+    display: flex;
+    gap: 1ch;
     text-align: center;
     position: relative;
     margin-block-start: 2em;
