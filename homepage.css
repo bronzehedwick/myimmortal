@@ -60,17 +60,19 @@
     position: relative;
     margin-block-start: 2em;
     text-decoration-line: none;
-    font-size: 2em;
+    font-size: 1.8em;
     font-variant-caps: small-caps;
     font-family: cursive;
     font-weight: 600;
 
     &::before {
       content: '☠ ';
+      font-size: 0.7em;
     }
 
     &::after {
       content: ' ☠';
+      font-size: 0.7em;
     }
   }
 
