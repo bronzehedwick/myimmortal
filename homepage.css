@@ -30,21 +30,12 @@
     inset-block-start: 0;
     inset-inline-start: 0;
     inline-size: 100%;
-    transform: translateY(-522px);
-    transition-delay: 50ms;
-    transition-duration: 2s;
-    transition-property: transform;
-    transition-timing-function: ease-in-out;
   }
 
   @media screen and (orientation: portrait) {
     #goth-drip {
       inline-size: 145%;
     }
-  }
-
-  .js-page-loaded #goth-drip {
-    transform: translateY(0);
   }
 
   #content {
@@ -56,6 +47,7 @@
   .begin {
     grid-column: 2;
     display: flex;
+    align-items: center;
     gap: 1ch;
     text-align: center;
     position: relative;
